@@ -1,0 +1,61 @@
+{
+  "children": [
+    {
+      "type": "file",
+      "name": "META6.json"
+    },
+    {
+      "type": "file",
+      "name": "Changes"
+    },
+    {
+      "name": "LICENCE",
+      "type": "file"
+    },
+    {
+      "purpose": null,
+      "children": [
+        {
+          "type": "file",
+          "name": "030-message.t"
+        },
+        {
+          "name": "001-meta.t",
+          "type": "file"
+        }
+      ],
+      "name": "t",
+      "type": "directory"
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "type": "file",
+                  "name": "JSON.rakumod"
+                }
+              ],
+              "name": "Message",
+              "purpose": null,
+              "type": "directory"
+            }
+          ],
+          "purpose": null,
+          "name": "Lumberjack",
+          "type": "directory"
+        }
+      ],
+      "purpose": null,
+      "name": "lib",
+      "type": "directory"
+    },
+    {
+      "name": "README.md",
+      "type": "file"
+    }
+  ],
+  "type": "layout"
+}
