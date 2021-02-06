@@ -1,6 +1,6 @@
 {
   "name": "Lumberjack::Message::JSON",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "auth": "github:jonathanstowe",
   "api": "1.0",
   "description": "Lumberjack::Message represented as JSON",

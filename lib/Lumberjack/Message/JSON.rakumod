@@ -136,10 +136,10 @@ role Lumberjack::Message::JSON does JSON::Class {
         trait_mod:<is>($level, unmarshalled-by => -> $v { Lumberjack::Level($v) });
     }
 
-    method to-json( --> Str ) {
+    method to-json( Bool :$pretty = True --> Str ) {
         self does JSON::Class;
         self!add-marshallers;
-        self.JSON::Class::to-json;
+        self.JSON::Class::to-json(:$pretty);
     }
     method from-json($json --> Lumberjack::Message::JSON ) {
         self!add-marshallers;
