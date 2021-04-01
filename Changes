@@ -1,3 +1,5 @@
+v0.0.3		Thu  1 Apr 15:17:11 BST 2021
+	* Up version of Lumberjack to get version without the memory leak
 v0.0.2		Sat  6 Feb 17:28:37 GMT 2021
 	* Pass on :$pretty as some applications prefer one line
 v0.0.1		Sat  6 Feb 13:52:31 GMT 2021
