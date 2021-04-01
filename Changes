@@ -1,3 +1,5 @@
+v0.1.9		Thu  1 Apr 18:32:38 BST 2021
+	* The only safe answer is to bump the version above that of Lumberjack::Application
 v0.0.3		Thu  1 Apr 15:17:11 BST 2021
 	* Up version of Lumberjack to get version without the memory leak
 v0.0.2		Sat  6 Feb 17:28:37 GMT 2021
