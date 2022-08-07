@@ -1,36 +1,39 @@
 {
-  "name": "Lumberjack::Message::JSON",
-  "version": "0.1.9",
-  "auth": "github:jonathanstowe",
-  "api": "1.0",
-  "description": "Lumberjack::Message represented as JSON",
-  "raku": "6.d",
-  "perl": "6.d",
+  "source-url": "git://github.com/jonathanstowe/Lumberjack-Message-JSON.git",
+  "auth": "zef:jonathanstowe",
+  "build-depends": [
+  ],
   "authors": [
     "Jonathan Stowe <jns+gh@gellyfish.co.uk>"
   ],
-  "provides": {
-     "Lumberjack::Message::JSON" : "lib/Lumberjack/Message/JSON.rakumod"
-  },
-  "depends": {
-   "runtime": {
-      "requires": [
-           "JSON::Class:ver<0.0.16+>",
-           "Lumberjack:ver<0.1.2+>"
-        ]
-     }
-  },
+  "version": "0.1.10",
   "tags": [
-     "logger",
-     "JSON"
+    "logger",
+    "JSON"
   ],
-  "source-url": "git://github.com/jonathanstowe/Lumberjack-Message-JSON.git",
-  "license": "Artistic-2.0",
-  "support": {
-    "source": "git://github.com/jonathanstowe/Lumberjack-Message-JSON.git",
-    "email": "jns+gh@gellyfish.co.uk"
+  "test-depends": [
+  ],
+  "raku": "6.d",
+  "depends": {
+    "runtime": {
+      "requires": [
+        "JSON::Class:ver<0.0.16+>",
+        "Lumberjack:ver<0.1.2+>"
+      ]
+    }
   },
+  "license": "Artistic-2.0",
+  "description": "Lumberjack::Message represented as JSON",
+  "name": "Lumberjack::Message::JSON",
+  "meta-version": "2",
+  "api": "1.0",
   "resources": [
   ],
-  "meta-version": "2"
+  "support": {
+    "email": "jns+gh@gellyfish.co.uk",
+    "source": "git://github.com/jonathanstowe/Lumberjack-Message-JSON.git"
+  },
+  "provides": {
+    "Lumberjack::Message::JSON": "lib/Lumberjack/Message/JSON.rakumod"
+  }
 }
