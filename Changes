@@ -1,3 +1,5 @@
+v0.1.11	Tue  6 Jan 20:38:01 GMT 2026
+	* Fix un-marshal of backtrace
 v0.1.10	Sun  7 Aug 09:42:30 BST 2022
 	* Upload to zef repository
 v0.1.9		Thu  1 Apr 18:32:38 BST 2021

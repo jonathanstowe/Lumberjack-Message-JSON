@@ -123,6 +123,14 @@ role Lumberjack::Message::JSON does JSON::Class {
         $class;
     }
 
+    sub unmarshal-backtrace($v) {
+        my @frames;
+        for $v.list -> $frame {
+            @frames.append: Backtrace::Frame.new($frame<file>, $frame<line>, Code, $frame<subname>);
+        }
+        @frames;
+    }
+
 
     method !add-marshallers() {
         my $when = self.^attributes.grep({$_.name eq '$!when'}).first;
@@ -134,6 +142,8 @@ role Lumberjack::Message::JSON does JSON::Class {
         my $level = self.^attributes.grep({ $_.name eq '$!level' }).first;
         trait_mod:<is>($level, marshalled-by => -> $v { $v.Int });
         trait_mod:<is>($level, unmarshalled-by => -> $v { Lumberjack::Level($v) });
+        my $backtrace = self.^attributes.grep({ $_.name eq '@!backtrace' }).first;
+        trait_mod:<is>($backtrace, unmarshalled-by => &unmarshal-backtrace);
     }
 
     method to-json( Bool :$pretty = True --> Str ) {
